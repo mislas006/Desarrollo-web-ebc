@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Marijose Islas">
+  <meta name="copyright" content="© 2025 Mareya Joyería">
+  <title>Mareya Joyería</title>
+
+  <!-- Fuentes y iconos -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Navbar con links reales -->
+<nav class="navbar">
+  <div class="social-icons">
+    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+  </div>
+  <a href="#" class="search"><i class="fa fa-search"></i></a>
+</nav>
+
+  <!-- Header principal con carrusel -->
+<header class="hero">
+  <div class="hero-carousel">
+    <div class="slide active">
+      <img src="img/foto portada.jpg" alt="Imagen 1">
+      <div class="hero-content">
+        <h1>M A R E Y A &nbsp; J O Y E R Í A</h1>
+        <h6 style="background: rgba(0, 0, 0, 0.5);">Piezas únicas como tu by <span>Marijose Islas</span></h6>
+        <button onclick="toggleModal('contacto')">CONTACTO</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="img/foto 2.jpg" alt="Imagen 2">
+      <div class="hero-content">
+        <h1>Piezas Únicas</h1>
+        <h6 style="background: rgba(0, 0, 0, 0.5);">Resalta tu esencia</h6>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="img/foto 3.jpg" alt="Imagen 3">
+      <div class="hero-content">
+        <h1>Perfecto para cualquier ocasión</h1>
+        <h6 style="background: rgba(0, 0, 0, 0.5);">Descubre el lujo en cada pieza</h6>
+      </div>
+    </div>
+</div>
+</header>
+
+  <!-- Main content -->
+  <main class="content">
+    <!-- Blog posts -->
+    <section class="Piezas">
+      <article>
+        <h3>Joyería que te hace única</h3>
+        <h5>Encuentra la tuya <span>Mayo 2, 2025</span></h5>
+        <img src="img/foto 1.jpg" alt="Collar">
+        <p>Contamos con piezas únicas para resaltar tu esencia.</p>
+        <div class="actions">
+          <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Me gusta</button>
+          <button onclick="toggleComments('coment1')">Comentarios <span>1</span></button>
+        </div>
+        <div id="coment1" class="comments">
+          <p>Ana: ¡Piezas de ensueño! ✨</p>
+        </div>
+      </article>
+
+      <article>
+        <h3>Nueva colección</h3>
+        <h5>Descubre la nueva colección de Mareya <span>Abril 23, 2025</span></h5>
+        <img src="img/foto 4.jpg" alt="colección">
+        <p>La nueva colección busca juntar los elementos de la tierra con nosotros.</p>
+        <div class="actions">
+          <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Me gusta</button>
+          <button onclick="toggleComments('coment2')">Comentarios <span>2</span></button>
+        </div>
+        <div id="coment2" class="comments">
+          <p>Carla: Se ve increíble </p>
+          <p>Roberto: ¡Me encanta, perfecto para un regalo!</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="card">
+        <img src="img/foto 5.jpg" alt="Collar">
+        <h4>Cristales</h4>
+        <p>Esta colección tiene cristales para hacer cada pieza diferente a las demás.</p>
+      </div>
+
+      <div class="card">
+        <h4>Suscríbete</h4>
+        <input type="email" placeholder="Ingresa tu correo">
+        <button onclick="toggleModal('contacto')">Suscribirme</button>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Modal -->
+  <div id="contacto" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleModal('contacto')">&times;</span>
+      <h2>Contáctame</h2>
+      <input type="email" placeholder="Ingresa tu correo">
+      <button onclick="toggleModal('contacto')">Enviar</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <button onclick="scrollToTop()"><i class="fa fa-arrow-up"></i> Subir</button>
+    <p>© 2025 Mareya Joyería | Creado por Marijose Islas</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/Mareya.js"></script>
+</body>
+</html>
